@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: time-server-pod
+spec:
+  containers:
+  - name: time-server-container
+    image: clusterminator/time-server:2.0
+    ports:
+    - containerPort: 5000
